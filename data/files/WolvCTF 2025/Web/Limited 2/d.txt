@@ -1,0 +1,18 @@
+Limited 2
+
+Web
+
+tags: ['Author: SamXML']
+
+Note: This uses the same source as Limited 1.
+
+Can you read the flag in another table?
+
+That table name starts with Flag_
+
+
+
+
+[]
+
+Connection_info: https://limited-app-974780027560.us-east5.run.app/

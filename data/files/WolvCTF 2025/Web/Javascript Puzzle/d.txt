@@ -1,0 +1,17 @@
+Javascript Puzzle
+
+Web
+
+tags: ['Author: SamXML']
+
+It is often useful to force exceptions to potentially get back valuable information.
+
+Can you make a request which causes an exception in this app?
+
+https://js-puzzle-974780027560.us-east5.run.app
+
+@author: SamXML
+
+['/files/c14d20ac7db2a6682f7de1c159ca8572/dist.tar.gz?token=eyJ1c2VyX2lkIjoxMjgzLCJ0ZWFtX2lkIjo2NjksImZpbGVfaWQiOjU4fQ.Z-ATdQ.iH0KgrGWWZceGMeqDVUDr7RCAAg']
+
+Connection_info: None

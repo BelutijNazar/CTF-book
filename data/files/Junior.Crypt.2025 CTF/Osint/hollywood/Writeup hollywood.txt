@@ -1,0 +1,4 @@
+Название задачи: hollywood
+Категория задачи: OSINT
+Сложность: medium
+Flag: hotel naftan

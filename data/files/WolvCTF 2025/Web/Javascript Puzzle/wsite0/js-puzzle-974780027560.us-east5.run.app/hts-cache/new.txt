@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+15:39:28	149/149	---M--	404	error ('Not%20Found')	text/html	date:Sun,%2023%20Mar%202025%2014:39:28%20GMT	https://js-puzzle-974780027560.us-east5.run.app/robots.txt		(from )
+15:39:28	11/11	---M--	200	added ('OK')	text/html	etag:W/%22b-zPKSho/nzhi4qmg6fxb0nBIICZQ%22	https://js-puzzle-974780027560.us-east5.run.app/	C:/Users/weron/CTF/2025-03-21%20WolvCTF%202025/Web/Javascript%20Puzzle/wsite0/js-puzzle-974780027560.us-east5.run.app/js-puzzle-974780027560.us-east5.run.app/index.html	(from )

@@ -1,0 +1,20 @@
+Wintery
+
+OSINT
+
+tags: ['Author: pradhamk']
+
+As the snow has once again started to fall, I spotted a flag afar. Can you find where this picture was taken? Truncate your coordinates to 3 decimal places.
+
+Flag format: wctf{latitude,longitude}
+
+
+
+['/files/cf7d25b0ed24569b30bd717848c7395c/wintery.jpg?token=eyJ1c2VyX2lkIjoxMjgzLCJ0ZWFtX2lkIjo2NjksImZpbGVfaWQiOjIxfQ.Z-ATdQ.7ul3YG9GZ7oY3LCovcrodEnAJkw']
+
+Connection_info: None
+
+Unlock Hint for 0 points
+flag is in format wctf{##.##a,##.##b} where a+b == 4
+
+no leading zero, no space

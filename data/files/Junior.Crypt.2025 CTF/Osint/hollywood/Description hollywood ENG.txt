@@ -1,0 +1,5 @@
+Название задачи: hollywood
+Категория задачи: OSINT
+Сложность: medium
+I found an interesting photo with the inscription HOLLYWOOD. I wonder where there is such a Hollywood and where the photo was taken from?
+Give the answer in the form of the name of the place where the photo was taken from. If 2 or more words, then separate them with a space.

@@ -1,0 +1,12 @@
+C:\Users\weron\CTF>
+C:\Users\weron\CTF>ncat labgrown.kctf-453514-codelab.kctf.cloud 1337
+== proof-of-work: disabled ==
+You got new lab grown shells? I don't care for that organic garbage... If you don't got shells fresh of the condenser get outta my shop!
+What, Still here? Hand it over, that thing, your synthetic shell
+yes
+You wouldn't cook on one of these... did you learn nothing from my chemistry class?
+2
+
+Ncat: Eine bestehende Verbindung wurde softwaregesteuert durch den Hostcomputer abgebrochen. .
+
+C:\Users\weron\CTF>

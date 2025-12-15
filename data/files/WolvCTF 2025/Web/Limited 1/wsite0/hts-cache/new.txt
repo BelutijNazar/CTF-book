@@ -1,0 +1,4 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+15:03:22	854/854	---M--	200	added ('OK')	text/html	date:Sun,%2023%20Mar%202025%2014:03:22%20GMT	https://limited-app-974780027560.us-east5.run.app/	C:/Users/weron/CTF/2025-03-21%20WolvCTF%202025/Web/Limited%201/wsite0/limited-app-974780027560.us-east5.run.app/index.html	(from )
+15:03:22	15/15	---M--	404	error ('Not%20Found')	text/html	date:Sun,%2023%20Mar%202025%2014:03:22%20GMT	https://limited-app-974780027560.us-east5.run.app/robots.txt		(from )
+15:03:23	680/680	---M--	200	added ('OK')	application/javascript	etag:%221742424226.0-680-1435240439%22	https://limited-app-974780027560.us-east5.run.app/static/script.js	C:/Users/weron/CTF/2025-03-21%20WolvCTF%202025/Web/Limited%201/wsite0/limited-app-974780027560.us-east5.run.app/static/script.js	(from https://limited-app-974780027560.us-east5.run.app/)

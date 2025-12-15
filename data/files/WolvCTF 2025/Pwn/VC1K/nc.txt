@@ -1,0 +1,12 @@
+C:\Users\weron\CTF>ncat vc1k.kctf-453514-codelab.kctf.cloud 1337
+== proof-of-work: disabled ==
+jj
+
+
+
+fefeferfre
+
+
+
+^C
+C:\Users\weron\CTF>

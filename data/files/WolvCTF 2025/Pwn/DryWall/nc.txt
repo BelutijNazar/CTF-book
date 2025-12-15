@@ -1,0 +1,13 @@
+C:\Users\weron\CTF>ncat drywall.kctf-453514-codelab.kctf.cloud 1337
+== proof-of-work: disabled ==
+What is your name, epic H4x0r?
+alex
+Good luck alex
+ <|;)
+0x5839b87991a3
+go
+
+
+Ncat: Eine bestehende Verbindung wurde softwaregesteuert durch den Hostcomputer abgebrochen. .
+
+C:\Users\weron\CTF>

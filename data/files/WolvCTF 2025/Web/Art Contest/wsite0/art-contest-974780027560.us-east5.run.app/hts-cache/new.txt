@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+15:43:32	2438/2438	---MCZ	200	added ('OK')	text/html	date:Sun,%2023%20Mar%202025%2014:43:32%20GMT	https://art-contest-974780027560.us-east5.run.app/	C:/Users/weron/CTF/2025-03-21%20WolvCTF%202025/Web/Art%20Contest/wsite0/art-contest-974780027560.us-east5.run.app/art-contest-974780027560.us-east5.run.app/index.html	(from )
+15:43:32	303/303	---M--	404	error ('Not%20Found')	text/html	date:Sun,%2023%20Mar%202025%2014:43:32%20GMT	https://art-contest-974780027560.us-east5.run.app/robots.txt		(from )

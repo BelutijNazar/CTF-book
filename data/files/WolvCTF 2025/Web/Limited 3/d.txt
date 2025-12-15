@@ -1,0 +1,21 @@
+Limited 3
+
+Web
+
+tags: ['Author: SamXML']
+
+Note: This uses the same source as Limited 1.
+
+There is a db user named: flag
+
+The password for this user is 13 characters and can be found in rockyou.
+
+Please wrap this password with wctf{} before submitting.
+
+For example, if the password was hocuspocus123 then the flag would be wctf{hocuspocus123}
+
+
+
+[]
+
+Connection_info: https://limited-app-974780027560.us-east5.run.app/

@@ -1,0 +1,6 @@
+Название задачи: name stone
+Категория задачи: OSINT
+Сложность: easy
+It seems to be an ordinary big stone, but there is a barely noticeable sign of the cross on it. Maybe it is something special and has its own name?
+Answer: the name of the stone, if 2 or more words, then separate them with a space.
+Flag: Borisov stone

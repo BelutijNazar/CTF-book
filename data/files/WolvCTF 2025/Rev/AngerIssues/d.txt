@@ -1,0 +1,11 @@
+AngerIssues
+
+Rev
+
+tags: ['Author: Didkd']
+
+Man... This is pissing me off. I can't get it to work. Maybe if I configure it better...
+
+['/files/37ea370de8e67099e8babacaf3e9de12/dist.tar.gz?token=eyJ1c2VyX2lkIjoxMjgzLCJ0ZWFtX2lkIjo2NjksImZpbGVfaWQiOjIyfQ.Z-ATeQ.qMkrZNP1fG01O2DDC6zTY9nOAsU']
+
+Connection_info: None

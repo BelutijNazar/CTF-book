@@ -1,0 +1,11 @@
+TakeNote
+
+Pwn
+
+tags: ['Author: Didkd']
+
+Last year my command line applications were vulnerable... So I made some more! (^-^)
+
+['/files/afe8442924034f742aa95f287a3be343/dist.tar.gz?token=eyJ1c2VyX2lkIjoxMjgzLCJ0ZWFtX2lkIjo2NjksImZpbGVfaWQiOjQyfQ.Z-ATeg.8oS_46k84hf-v2pJRkjV178frvI']
+
+Connection_info: nc takenote.kctf-453514-codelab.kctf.cloud 1337

@@ -1,0 +1,8 @@
+"key","ctf","nctf","data","category","ncat0","ncat1","challenge","description","nc","wsite","writeup","attachment","level","tag1","tag2","tag3","tag4","tag5"
+"1","Junior.Crypt.2025 CTF","1","2025-07-01","OSINT","1","0","author's autograph","d.txt","","[]","[]","['Familiar man.jpg']","easy","Person","","","",""
+"2","Junior.Crypt.2025 CTF","1","2025-07-01","OSINT","1","0","Center of Europe","d.txt","","[]","[]","['Center of Europe.jpg']","easy","Belarus","","","",""
+"3","Junior.Crypt.2025 CTF","1","2025-07-01","steganography","1","0","guitar melody","d.txt","","[]","[]","['DEPart.wav']","easy","music","","","",""
+"4","Junior.Crypt.2025 CTF","1","2025-07-01","OSINT","1","0","history of the university","d.txt","","[]","[]","['Click to decrypt files.exe']","hard","history","","","",""
+"5","Junior.Crypt.2025 CTF","1","2025-07-01","OSINT","1","0","hollywood","d.txt","","[]","[]","['place.jpg']","medium","Belarus","","","",""
+"6","Junior.Crypt.2025 CTF","1","2025-07-01","OSINT","1","0","name stone","d.txt","","[]","[]","['rock.jpg']","easy","Person","","","",""
+"7","Junior.Crypt.2025 CTF","1","2025-07-01","steganography","1","0","uncommon text","d.txt","","[]","['Writeup uncommon text.txt']","['history.docx']","hard","Text","","","",""

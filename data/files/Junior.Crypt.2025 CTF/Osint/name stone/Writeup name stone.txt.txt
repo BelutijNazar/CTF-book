@@ -1,0 +1,4 @@
+Название задачи: name stone
+Категория задачи: OSINT
+Сложность: easy
+Flag: Borisov stone

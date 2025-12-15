@@ -1,0 +1,5 @@
+Название задачи: center of Europe
+Категория задачи: OSINT
+Сложность: medium
+They say Europe has 2 centers: one was found by the French - 54°50′ north latitude and 25°19′ east longitude. The other one is on this monument - 55°30′ north latitude and 28°48′ east longitude. And what are the coordinates of the center of Europe to which this monument refers?
+Flag format: 11.111,22.222

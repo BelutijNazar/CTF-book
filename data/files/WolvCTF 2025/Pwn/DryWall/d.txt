@@ -1,0 +1,11 @@
+DryWall
+
+Pwn
+
+tags: ['Author: Didkd']
+
+My code is so secure! I have so many security measures! Its like a brick wall! I love security! Maybe I'll add more security to it later!
+
+['/files/e7debb34b1e687b547ff7c27e1d585c7/dist.tar.gz?token=eyJ1c2VyX2lkIjoxMjgzLCJ0ZWFtX2lkIjo2NjksImZpbGVfaWQiOjQ1fQ.Z-ATeA.s8moJlZ1Y-dAMVGzGTbNcKqxHTo']
+
+Connection_info: nc drywall.kctf-453514-codelab.kctf.cloud 1337

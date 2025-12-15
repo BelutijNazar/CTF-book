@@ -1,0 +1,64 @@
+Ncat: Eine bestehende Verbindung wurde softwaregesteuert durch den Hostcomputer abgebrochen. .
+
+C:\Users\weron\CTF>ncat office.kctf-453514-codelab.kctf.cloud 1337
+== proof-of-work: disabled ==
+You're getting ready for work
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+10
+Balance: $1337
+1) Clock in
+2) Ask for raise
+3) Quit job
+> choice: 0
+Balance: $1337
+1) Clock in
+2) Ask for raise
+3) Quit job
+> 1
+You forget to put the cover sheet on your TPS report
+You have a meeting with a consultant
+The printer jams
+Your boss tells you that you have to come in on Saturday
+The fire alarm goes off
+You think about quitting
+Time to clock out. You made $10 today
+Balance: $1347
+1) Clock in
+2) Ask for raise
+3) Quit job
+> 1
+You forget to put the cover sheet on your TPS report
+You have a meeting with a consultant
+The printer jams
+Your boss tells you that you have to come in on Saturday
+The fire alarm goes off
+Your cowworker asks if you have seen his stapler
+Time to clock out. You made $10 today
+Balance: $1357
+1) Clock in
+2) Ask for raise
+3) Quit job
+> 2
+How much do you want to make per day?
+> 2
+Huh?
+Balance: $1357
+1) Clock in
+2) Ask for raise
+3) Quit job
+> 3
+Good riddance
+
+
+Ncat: Eine bestehende Verbindung wurde softwaregesteuert durch den Hostcomputer abgebrochen. .
+
+C:\Users\weron\CTF>

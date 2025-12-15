@@ -1,0 +1,5 @@
+Название задачи: history of the university
+Категория задачи: begging
+Сложность: medium
+I was given a history assignment from the university. It had some kind of application and 2 incomprehensible files. When I open the application, where was a request for password. I asked what I should do with them, and in response I only received that I should search on the Internet for information about Grodno State University.
+Flag in the format grodno{secret_message}.
