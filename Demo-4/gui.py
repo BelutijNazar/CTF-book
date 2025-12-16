@@ -1575,9 +1575,9 @@ class CryptographyApp:
                 
     def _resolve_task_path(self, ctf, category, task_name):
         """
-        Ищет путь к папке задачи по строгой иерархии:
-        data/files -> CTF -> Category -> TaskName
+        Ищет путь к папке задачи.
         """
+        # 1. Базовый путь
         base_dir = os.path.dirname(os.path.abspath(__file__))
         roots = [
             os.path.join(base_dir, "data", "files"),
@@ -1590,22 +1590,36 @@ class CryptographyApp:
         def find_folder_insensitive(base, target_name):
             if not os.path.exists(base): return None
             try:
+                if os.path.exists(os.path.join(base, target_name)):
+                    return os.path.join(base, target_name)
+                
+                target_lower = target_name.lower().strip()
                 for item in os.listdir(base):
                     if os.path.isdir(os.path.join(base, item)):
-                        if item.lower().strip() == target_name.lower().strip():
+                        if item.lower().strip() == target_lower:
                             return os.path.join(base, item)
             except: pass
             return None
 
+        # 2. Ищем папку Турнира (CTF)
         if ctf:
             current_path = find_folder_insensitive(current_path, ctf)
             if not current_path: return None 
 
-        if category:
-            current_path = find_folder_insensitive(current_path, category)
-            if not current_path: return None
-
+        # 3. Ищем папку Задачи (СКАНИРУЕМ ВСЕ КАТЕГОРИИ)
         if task_name:
-            current_path = find_folder_insensitive(current_path, task_name)
+            direct_task = find_folder_insensitive(current_path, task_name)
+            if direct_task:
+                return direct_task
             
-        return current_path
+            try:
+                subfolders = [f.path for f in os.scandir(current_path) if f.is_dir()]
+                
+                for cat_folder in subfolders:
+                    found_task = find_folder_insensitive(cat_folder, task_name)
+                    if found_task:
+                        return found_task
+            except:
+                pass
+            
+        return None
