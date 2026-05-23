@@ -1,0 +1,3 @@
+Take up your arms, and slay your enemies!
+
+`nc tjc.tf 31412`

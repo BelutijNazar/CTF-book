@@ -2,7 +2,6 @@ import csv
 import os
 from dataclasses import dataclass
 from typing import List, Dict, Optional, Any
-
 @dataclass
 class Task:
     key: str
@@ -24,9 +23,8 @@ class Task:
     tag3: str
     tag4: str
     tag5: str
-
 class TaskManager:
-    # 1. СЛОВАРЬ (Для справки и возможного расширения функционала)
+    # 1. СЛОВАРЬ 
     NCAT_PARSER = {
         'crypto':1, 'cryptography':1, 
         'misc':2, 
@@ -44,9 +42,7 @@ class TaskManager:
         'checkin':14,
         'steganography': 15, 'stegano': 15, 'stego': 15
     }
-
-    # 2. ОТОБРАЖЕНИЕ В ФИЛЬТРЕ (ID -> Красивое имя)
-    # Если в CSV стоит число, программа берет название отсюда
+    # 2. ОТОБРАЖЕНИЕ В ФИЛЬТРЕ 
     ID_TO_DISPLAY = {
         1: "Cryptography",
         2: "Misc",
@@ -64,18 +60,15 @@ class TaskManager:
         14: "Checkin",
         15: "Steganography" 
     }
-
     def __init__(self, csv_file_path: str):
         self.csv_file_path = csv_file_path
         self.tasks: List[Task] = []
         self.load_tasks()
-    
     def load_tasks(self):
         """Загрузка задач из CSV файла"""
         if not os.path.exists(self.csv_file_path):
             print(f"Файл {self.csv_file_path} не найден")
-            return []
-        
+            return []    
         try:
             with open(self.csv_file_path, 'r', encoding='utf-8') as file:
                 reader = csv.DictReader(file)
@@ -107,13 +100,9 @@ class TaskManager:
         except Exception as e:
             print(f"Ошибка загрузки задач: {e}")
             self.tasks = []
-            return False
-            
+            return False          
     def get_all_categories(self) -> List[str]:
-        """
-        Собирает список категорий для выпадающего меню.
-        Смотрит на цифры в ncat0 и ncat1 и переводит их в слова.
-        """
+        """Смотрит на цифры в ncat0 и ncat1 и переводит их в слова."""
         used_ids = set()
         for task in self.tasks:
             if task.ncat0 and task.ncat0 != '0': 
@@ -122,8 +111,6 @@ class TaskManager:
             if task.ncat1 and task.ncat1 != '0': 
                 try: used_ids.add(int(task.ncat1))
                 except: pass
-        
-        # Переводим ID (1, 9, 15) в Названия (Crypto, OSINT, Steganography)
         categories = []
         for cat_id in used_ids:
             if cat_id in self.ID_TO_DISPLAY:
@@ -148,66 +135,58 @@ class TaskManager:
                 if tag: tags.add(tag)
         return sorted(list(tags))
 
-    def get_tasks_by_filters(self, category: str = None, level: str = None, 
+    def get_tasks_by_filters(self, query: str = "", category: str = None, level: str = None, 
                            ctf: str = None, tag: str = None,
                            has_writeup: bool = False, has_wsite: bool = False, 
                            has_attachment: bool = False) -> List[Task]:
-        """Фильтрация задач"""
+        """Универсальная фильтрация: Текстовый поиск + Фильтры + Чекбоксы"""
         filtered_tasks = self.tasks
         
-        # 1. ФИЛЬТР ПО КАТЕГОРИИ (По двум полям ncat0 и ncat1)
+        # 0. ТЕКСТОВЫЙ ПОИСК 
+        if query:
+            query = query.lower().strip()
+            filtered_tasks = [t for t in filtered_tasks if t.challenge and query in str(t.challenge).lower()]
+
+        # 1. ФИЛЬТР ПО КАТЕГОРИИ
         if category and category != "Все":
-            target_id = None
-            for cat_id, name in self.ID_TO_DISPLAY.items():
-                if name == category:
-                    target_id = str(cat_id)
-                    break
-            
-            if target_id:
-                filtered_tasks = [
-                    task for task in filtered_tasks 
-                    if str(task.ncat0) == target_id or str(task.ncat1) == target_id
-                ]
+            if category == "Пусто":
+                filtered_tasks = [t for t in filtered_tasks if (not t.ncat0 or t.ncat0 == '0') and (not t.ncat1 or t.ncat1 == '0')]
+            else:
+                target_id = None
+                for cat_id, name in self.ID_TO_DISPLAY.items():
+                    if name == category:
+                        target_id = str(cat_id)
+                        break
+                if target_id:
+                    filtered_tasks = [t for t in filtered_tasks if str(t.ncat0) == target_id or str(t.ncat1) == target_id]
 
         # 2. Уровень
         if level and level != "Все":
             if level == "Не указан":
-                filtered_tasks = [task for task in filtered_tasks if not task.level or task.level.strip() == "" or task.level.lower() == "не указан"]
+                filtered_tasks = [t for t in filtered_tasks if not t.level or t.level.strip() == "" or t.level.lower() == "не указан"]
             else:
-                filtered_tasks = [task for task in filtered_tasks if task.level and task.level.lower() == level.lower()]
+                filtered_tasks = [t for t in filtered_tasks if t.level and t.level.lower() == level.lower()]
 
         # 3. Турнир
         if ctf and ctf != "Все":
-            filtered_tasks = [task for task in filtered_tasks if task.ctf == ctf]
+            if ctf == "Пусто":
+                filtered_tasks = [t for t in filtered_tasks if not t.ctf or not t.ctf.strip()]
+            else:
+                filtered_tasks = [t for t in filtered_tasks if t.ctf == ctf]
             
         # 4. Тег
         if tag and tag != "Все":
-            filtered_tasks = [task for task in filtered_tasks 
-                            if tag in [task.tag1, task.tag2, task.tag3, task.tag4, task.tag5]]
+            if tag == "Пусто":
+                filtered_tasks = [t for t in filtered_tasks if not any([t.tag1, t.tag2, t.tag3, t.tag4, t.tag5])]
+            else:
+                filtered_tasks = [t for t in filtered_tasks if tag in [t.tag1, t.tag2, t.tag3, t.tag4, t.tag5]]
         
         # 5. Чекбоксы
-        if has_writeup:
-            filtered_tasks = [t for t in filtered_tasks if t.writeup and t.writeup != "[]" and t.writeup != "None" and t.writeup.strip()]
-        if has_wsite:
-            filtered_tasks = [t for t in filtered_tasks if t.wsite and t.wsite != "[]" and t.wsite != "None" and t.wsite.strip()]
-        if has_attachment:
-            filtered_tasks = [t for t in filtered_tasks if t.attachment and t.attachment != "[]" and t.attachment != "None" and t.attachment.strip()]
+        if has_writeup: filtered_tasks = [t for t in filtered_tasks if t.writeup and t.writeup != "[]" and t.writeup != "None" and t.writeup.strip()]
+        if has_wsite: filtered_tasks = [t for t in filtered_tasks if t.wsite and t.wsite != "[]" and t.wsite != "None" and t.wsite.strip()]
+        if has_attachment: filtered_tasks = [t for t in filtered_tasks if t.attachment and t.attachment != "[]" and t.attachment != "None" and t.attachment.strip()]
         
         return filtered_tasks
-
-    def search_tasks_with_filters(self, query: str = "", category: str = "Все", 
-                                  has_writeup: bool = False, has_wsite: bool = False, 
-                                  has_attachment: bool = False) -> List[Task]:
-        base_filtered = self.get_tasks_by_filters(category=category, has_writeup=has_writeup, 
-                                                has_wsite=has_wsite, has_attachment=has_attachment)
-        if not query: return base_filtered
-        query = query.lower()
-        results = []
-        for task in base_filtered:
-            fields = [task.challenge, task.description, task.category, task.ctf, task.tag1, task.tag2, task.tag3, task.tag4, task.tag5]
-            if any(field and query in field.lower() for field in fields):
-                results.append(task)
-        return results
 
     def get_task_statistics(self) -> Dict[str, Any]:
         stats = {
@@ -216,10 +195,56 @@ class TaskManager:
             'levels_count': len(self.get_all_levels()),
             'tags_count': len(self.get_all_tags()),
             'categories': {},
-            'levels': {}
+            'levels': {},
+            'tags': {}
         }
         for name in self.get_all_categories():
             stats['categories'][name] = len(self.get_tasks_by_filters(category=name))
         for level in self.get_all_levels():
             stats['levels'][level] = len(self.get_tasks_by_filters(level=level))
+        for tag in self.get_all_tags():
+            stats['tags'][tag] = len(self.get_tasks_by_filters(tag=tag))
         return stats
+    
+    def save_tasks_to_csv(self) -> bool:
+        """Сохраняет текущий список задач обратно в CSV файл (с безопасными кавычками)"""
+        if not self.csv_file_path or not os.path.exists(self.csv_file_path):
+            print("Ошибка: Файл CSV не найден для сохранения.")
+            return False
+        
+        try:
+            headers =[
+                "key", "ctf", "nctf", "data", "category", "ncat0", "ncat1",
+                "challenge", "description", "nc", "wsite", "writeup", "attachment",
+                "level", "tag1", "tag2", "tag3", "tag4", "tag5"
+            ]
+            
+            with open(self.csv_file_path, 'w', encoding='utf-8', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=headers, quoting=csv.QUOTE_ALL)
+                writer.writeheader()
+                
+                for task in self.tasks:
+                    row = {
+                        "key": task.key, "ctf": task.ctf, "nctf": task.nctf,
+                        "data": task.data, "category": task.category, 
+                        "ncat0": task.ncat0, "ncat1": task.ncat1,
+                        "challenge": task.challenge, "description": task.description,
+                        "nc": task.nc, "wsite": task.wsite, "writeup": task.writeup,
+                        "attachment": task.attachment, "level": task.level,
+                        "tag1": task.tag1, "tag2": task.tag2, "tag3": task.tag3,
+                        "tag4": task.tag4, "tag5": task.tag5
+                    }
+                    writer.writerow(row)
+            return True
+        except Exception as e:
+            print(f"Ошибка при сохранении CSV: {e}")
+            return False
+
+    def update_task_field(self, task_key: str, field_name: str, new_value: str) -> bool:
+        """Обновляет конкретное поле у задачи и сразу сохраняет изменения в файл"""
+        for task in self.tasks:
+            if str(task.key) == str(task_key):
+                if hasattr(task, field_name):
+                    setattr(task, field_name, str(new_value))
+                    return self.save_tasks_to_csv()
+        return False

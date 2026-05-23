@@ -1,15 +1,15 @@
 {
-  "csv_file_path": "C:/Users/weron/JN/Demo-4/data/2024-08-10 Lexington Informatics Tournament CTF 2024-Copy1.csv",
-  "theme": "Светлая",
+  "csv_file_path": "D:/уник/диплом/CTF-book/tasks_metadata.csv",
+  "theme": "Темная",
   "language": "Русский",
-  "window_width": 1280,
-  "window_height": 677,
+  "window_width": 1707,
+  "window_height": 976,
   "recent_files": [
+    "D:\\уник\\диплом\\CTF-book\\tasks_metadata.csv",
     "C:\\Users\\weron\\JN\\Demo-4\\data\\2024-08-10 Lexington Informatics Tournament CTF 2024-Copy1.csv",
     "C:\\Users\\weron\\JN\\Demo-3\\data\\2024-08-10 Lexington Informatics Tournament CTF 2024-Copy1.csv",
     "C:\\Users\\weron\\JN\\Demo\\data\\2024-08-10 Lexington Informatics Tournament CTF 2024-Copy1.csv",
-    "C:\\Users\\weron\\JN\\Demo\\2024-08-10 Lexington Informatics Tournament CTF 2024.csv",
-    "C:\\Users\\weron\\JN\\Demo-1\\data\\tasks_metadata.csv"
+    "C:\\Users\\weron\\JN\\Demo\\2024-08-10 Lexington Informatics Tournament CTF 2024.csv"
   ],
   "auto_refresh": true,
   "max_recent_files": 5,

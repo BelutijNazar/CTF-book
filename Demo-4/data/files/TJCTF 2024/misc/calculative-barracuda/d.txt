@@ -1,0 +1,3 @@
+This AI powered fish does NOT like it when other people use AI... pretty ironic. Try to convince the AI fish to allow others to use AI to get the flag!
+
+`nc tjc.tf 31423`

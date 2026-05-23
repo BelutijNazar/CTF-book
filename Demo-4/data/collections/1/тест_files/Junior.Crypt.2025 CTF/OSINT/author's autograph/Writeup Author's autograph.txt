@@ -1,0 +1,4 @@
+Название задачи: Author's autograph
+Категория задачи: OSINT
+Сложность: medium
+Flag: goblin,goblins in police greatcoats

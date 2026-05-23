@@ -1,0 +1,3 @@
+Mendacem oportet esse memorem.
+
+nc tjc.tf 31313

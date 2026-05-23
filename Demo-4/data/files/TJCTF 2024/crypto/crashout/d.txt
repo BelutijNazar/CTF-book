@@ -1,0 +1,2 @@
+Ỉ H̰OP̀É ÎM̊ OKAỸ ḂÜT̄ Ỉ ŇËẼD̄ H̃ȨL̂ṔṔP̌
+flag format is `tjctf{UPPERCASE_SEPERATED_BY_UNDERSCROLLS}`

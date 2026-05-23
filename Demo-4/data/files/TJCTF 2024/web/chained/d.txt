@@ -1,0 +1,19 @@
+i designed my own admin bot! and i included an admin page that should be super duper secure... 
+
+running on port 5000
+
+[chained.tjc.tf](https://chained.tjc.tf)
+
+[admin bot](https://admin-bot.tjctf.org/chained)
+
+========================================
+--- АВТОМАТИЧЕСКИЙ ПЕРЕВОД (RU) ---
+========================================
+
+я разработал своего собственного бота-администратора! и я включил страницу администратора, которая должна быть супер-пупер безопасной... 
+
+работает на порту 5000
+
+[chained.tjc.tf](https://chained.tjc.tf)
+
+[бот-админ](https://admin-bot.tjctf.org/chained)

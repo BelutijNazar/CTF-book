@@ -1,0 +1,4 @@
+Looks like Andrew doesn't know how to implement proper input filtration... Exploit a critical vulnerability to obtain the flag!
+Note: use the same instancer from part 1.
+
+[Instancer](https://instancer.tjctf.org/challenge/vibed-intranet-p1)

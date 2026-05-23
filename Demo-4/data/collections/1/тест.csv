@@ -1,0 +1,4 @@
+"key","ctf","nctf","data","category","ncat0","ncat1","challenge","description","nc","wsite","writeup","attachment","level","tag1","tag2","tag3","tag4","tag5"
+"1","Junior.Crypt.2025 CTF","1","2025-07-01","OSINT","9","0","Center of Europe","d.txt","nc challs.ctf.com 1337","[]","[Writeup center of Europe.txt]","['Center of Europe', 'Center of Europe 1']","easy","Belarus","","","",""
+"2","Junior.Crypt.2025 CTF","1","2025-07-01","steganography","15","0","fast test","d.txt","","[]","[Writeup fast test.txt]","['Fast challange']","easy","Text","","","",""
+"3","Junior.Crypt.2025 CTF","1","2025-07-01","OSINT","9","0","author's autograph","d.txt","","[]","[Writeup Author's autograph.txt]","['Familiar man.jpg']","easy","Person","","","",""

@@ -1,6 +1,0 @@
-Название задачи: Author's autograph
-Категория задачи: OSINT
-Сложность: medium
-Student Andrey passed by the stand and saw a familiar photo of a man. He remembered this man: that man wrote books, translated films, wrote reviews of games. Andrey also remembered that he had some funny nickname and why he got it, but the student forgot the exact nickname and the reason. Help Andrey remember them.
-Flag format: nickname,reason (if more than one word, write with a space, all in lowercase)
-Тест! Доп тест!

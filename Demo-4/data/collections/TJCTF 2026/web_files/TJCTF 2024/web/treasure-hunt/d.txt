@@ -1,0 +1,4 @@
+Let's go hunt down some treasure!
+The flag is split into 4 parts. I'll give you the first one right here: tjctf
+
+[treasure-hunt.tjc.tf](https://treasure-hunt.tjc.tf)

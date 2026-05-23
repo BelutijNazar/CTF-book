@@ -1,0 +1,7 @@
+A system defines a quadratic function over a finite field:
+
+    H(x) = x^T M x - 2c^T x (mod p)
+
+The secret input x is a stationary point of H(x).
+
+Recover x and decode it to obtain the flag.

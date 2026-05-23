@@ -1,0 +1,5 @@
+Thomas Jefferson High School for Science and Technology is a magnet high school located in Fairfax County, Virginia operated by Fairfax County Public Schools.
+
+Mincraft Server `mc.tjctf.org`
+
+`nc tjc.tf 31003`

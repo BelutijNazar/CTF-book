@@ -1,0 +1,6 @@
+We deployed a machine learning model as a service.
+For debugging, it exposes a small part of an internal signal for each input.
+Surely that can't leak anything important... right?
+Send exactly 16 hex characters per query.
+
+`nc tjc.tf 31002`

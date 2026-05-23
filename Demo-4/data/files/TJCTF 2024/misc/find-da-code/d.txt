@@ -1,0 +1,5 @@
+You were assigned 4 unique codes to remember a year ago, but you forgot them! Now you need to figure out a way to get in... 
+
+P.S. This challenge was inspired by a particular authentication system I had to bypass because I forgot my pictures lol 
+
+`nc tjc.tf 31004`

@@ -12,7 +12,7 @@
 "11","CTF@CIT 2024","4","2024-07-15","Forensics","6","0","Beep Boop","d.txt","","[]","['CTF@CIT 2024 # Forensics # Beep Boop.docx']","[]","","No","","","",""
 "12","WolvCTF 2025","5","2025-03-21","Crypto","1","0","ECB","d.txt","nc ecbpp.kctf-453514-codelab.kctf.cloud 1337","[]","[]","[nc]","","ECB","","","",""
 "13","WolvCTF 2025","1","2025-03-21","Crypto","1","0","KryptosSystem","d.txt","","[]","[]","[ciphertext]","","KryptosSystem","","","",""
-"14","WolvCTF 2025","1","2025-03-21","Crypto","1","0","ShiftHappens","d.txt","","[]","[]","[dist]","","No","","","",""
+"14","WolvCTF 2025","1","2025-03-21","Crypto","1","0","ShiftHappens","d.txt","","[]","[]","[dist]","","No","RSA","","",""
 "15","WolvCTF 2025","1","2025-03-21","Osint","9","0","Lost","d.txt","","[]","[]","[lost]","","Search","","","",""
 "16","WolvCTF 2025","1","2025-03-21","Osint","9","0","Lost 2","d.txt","","[]","[]","[lost 2]","","Search","","","",""
 "17","WolvCTF 2025","1","2025-03-21","Osint","9","0","Wintery","d.txt","","[]","[]","[wintery]","","Search","","","",""
