@@ -1,1 +1,8 @@
-data/1/Forensics-20251215T143342Z-3-001.zip
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+app_settings.json
+app_settings_fallback.json
